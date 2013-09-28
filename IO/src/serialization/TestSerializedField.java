@@ -1,4 +1,13 @@
-import java.io.*;
+package serialization;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectStreamField;
+import java.io.Serializable;
+
 /**
  * Test harness for <code>Rectangle</code>
  * @version 1.0
