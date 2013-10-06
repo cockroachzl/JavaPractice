@@ -1,8 +1,10 @@
 .metadata/
 *.class
 *.jar
+*.txt
 bin/
 *~
 *html
 *.ser
 doc/
+sample/
