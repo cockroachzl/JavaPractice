@@ -8,3 +8,9 @@ bin/
 *.ser
 doc/
 sample/
+audio/
+notes/
+Debug/
+Release/
+
+
