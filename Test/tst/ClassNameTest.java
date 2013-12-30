@@ -20,4 +20,22 @@ public class ClassNameTest {
 		System.out.println(ExecutionException.class.getCanonicalName());
 		System.out.println(ExecutionException.class.getSimpleName());
 	}
+	
+	@Test
+	public void testClassNameInConstructor() {
+		B b = new B();
+	}
+}
+
+
+class A {
+	A() { 
+		System.out.println("A()::" + getClass().getSimpleName());
+	}
+}
+
+class B extends A {
+	B() { 
+		System.out.println("B()::" + getClass().getSimpleName());
+	}
 }

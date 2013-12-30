@@ -5,7 +5,7 @@ import java.sql.*;
 import java.io.*;
 import java.util.*;
 
-public class TestDB
+public class TestDB2
 {
 	public static void main(String args[]) throws IOException
 	{

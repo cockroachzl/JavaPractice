@@ -7,5 +7,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mockito"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/commons-collections"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lombok"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/apache-commons"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
