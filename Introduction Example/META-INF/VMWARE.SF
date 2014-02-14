@@ -1,0 +1,23 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: SHCGxzzEaMI6zkXjfCtYUEmyHUA=
+Created-By: 1.6.0_45 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: nUNxqE8NW6rTIn7svDxCLSEmlWQ=
+
+Name: .classpath
+SHA1-Digest: Pi6KGx8T4xHKDNGButK2ack+dgI=
+
+Name: src/introduction/Point.java
+SHA1-Digest: 5lBUwcrhgNMfwGknuX7Cng3vrNQ=
+
+Name: src/introduction/ComparablePoint.aj
+SHA1-Digest: 0i8+wiuNqbEewBINh5/pbqGkPjQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: src/introduction/HashablePoint.aj
+SHA1-Digest: WP65ql/LalBkZ04aha9cUboJ4I8=
+
+Name: src/introduction/CloneablePoint.aj
+SHA1-Digest: orGBL6mSWgWy52A3RjZUJfKemgQ=
+

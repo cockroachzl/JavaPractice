@@ -1,0 +1,4 @@
+org.aopalliance.aop
+org.aopalliance.instrument
+org.aopalliance.intercept
+org.aopalliance.reflect
