@@ -10,6 +10,7 @@ public class TestProxy {
 		IFoo fooProxy = (IFoo) DebugProxy.getProxy(foo);
 		System.out.println(fooProxy.add(1,2) );
 		System.out.println(fooProxy.substract(1, 2) );
+		System.out.println(fooProxy);
 	}
 
 }

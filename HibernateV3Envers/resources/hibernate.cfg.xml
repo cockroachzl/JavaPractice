@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">org.h2.Driver</property>
+<!--         <property name="connection.driver_class">net.sf.log4jdbc.DriverSpy</property> -->
+		<property name="connection.url">jdbc:h2:tcp://localhost/test3;DB_CLOSE_DELAY=-1;MVCC=TRUE</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password"></property>
+
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">1</property>
+
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.H2Dialect</property>
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">create</property>
+
+		<!-- Names the annotated entity class -->
+		<mapping class="org.hibernate.tutorial.annotations.Event" />
+
+		<!-- Envers -->
+		<!-- <property name="org.hibernate.envers.audit_strategy">org.hibernate.envers.strategy.ValidityAuditStrategy</property> -->
+		
+		<listener class="org.hibernate.envers.event.AuditEventListener"
+			type="post-insert" />
+		<listener class="org.hibernate.envers.event.AuditEventListener"
+			type="post-update" />
+		<listener class="org.hibernate.envers.event.AuditEventListener"
+			type="post-delete" />
+		<listener class="org.hibernate.envers.event.AuditEventListener"
+			type="pre-collection-update" />
+		<listener class="org.hibernate.envers.event.AuditEventListener"
+			type="pre-collection-remove" />
+		<listener class="org.hibernate.envers.event.AuditEventListener"
+			type="post-collection-recreate" />
+		
+		
+
+	</session-factory>
+
+</hibernate-configuration>

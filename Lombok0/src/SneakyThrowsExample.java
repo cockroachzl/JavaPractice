@@ -1,7 +1,6 @@
 import lombok.SneakyThrows;
 import lombok.val;
 import java.io.*;
-import java.lang.reflect.*;
  
 public class SneakyThrowsExample implements Runnable {
 
