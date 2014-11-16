@@ -1,11 +1,12 @@
-import org.codehaus.jackson.annotate.JsonTypeInfo;
-
-import creature.Animal;
 import lombok.Getter;
 import lombok.Setter;
 
+import org.codehaus.jackson.annotate.JsonTypeInfo;
+
+import creature.Animal;
+
 @Getter @Setter
-//@JsonTypeInfo(use=JsonTypeInfo.Id.CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
+@JsonTypeInfo(use=JsonTypeInfo.Id.CLASS, include=JsonTypeInfo.As.PROPERTY, property="@class")
 public class Zoo {
 	 Animal animal;
 	 String name = "a zoo name";
